@@ -1,14 +1,14 @@
 {
-  "name": "ng-sidebar",
-  "version": "9.4.3",
-  "description": "[DEPRECATED] Angular sidebar component.",
+  "name": "ng-sidebar9plus",
+  "version": "12.0.0",
+  "description": "Angular sidebar component 9+. Forked from https://github.com/arkon/ng-sidebar.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/arkon/ng-sidebar.git"
+    "url": "git+https://github.com/igorkgg/ng-sidebar.git"
   },
-  "homepage": "http://echeung.me/ng-sidebar/",
+  "homepage": "https://github.com/igorkgg/ng-sidebar/blob/master/README.md",
   "bugs": {
-    "url": "https://github.com/arkon/ng-sidebar/issues"
+    "url": "https://github.com/igorkgg/ng-sidebar/issues"
   },
   "files": [
     "lib_commonjs/*",
@@ -36,19 +36,20 @@
     "prepare": "npm run build"
   },
   "peerDependencies": {
-    "@angular/core": ">=8.0.0",
-    "@angular/common": ">=8.0.0"
+    "@angular/core": ">=9.0.0",
+    "@angular/common": ">=9.0.0"
   },
   "devDependencies": {
-    "@angular/common": "^8.2.14",
-    "@angular/compiler": "^8.2.14",
-    "@angular/compiler-cli": "^8.2.14",
-    "@angular/core": "^8.2.14",
-    "@angular/platform-browser": "^8.2.14",
+    "@angular-devkit/schematics": "^13.0.3",
+    "@angular/common": "^12.2.13",
+    "@angular/compiler": "^12.2.13",
+    "@angular/compiler-cli": "^12.2.13",
+    "@angular/core": "^12.2.13",
+    "@angular/platform-browser": "^12.2.13",
     "rimraf": "^3.0.2",
     "rxjs": "^6.5.5",
     "tslint": "^5.20.1",
-    "typescript": "~3.4.0",
-    "zone.js": "~0.9.1"
+    "typescript": "~4.3.5",
+    "zone.js": "~0.11.4"
   }
 }
