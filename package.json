@@ -33,7 +33,8 @@
     "build:commonjs": "rimraf lib_commonjs && ngc -p tsconfig.json",
     "build:esmodule": "rimraf lib_esmodule && ngc -p tsconfig.module.json",
     "build": "npm run lint && npm run build:commonjs && npm run build:esmodule",
-    "prepare": "npm run build"
+    "prepare": "npm run build",
+    "postinstall": "ngcc"
   },
   "peerDependencies": {
     "@angular/core": ">=9.0.0",
