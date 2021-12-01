@@ -34,8 +34,7 @@
     "build:esmodule": "rimraf lib_esmodule && ngc -p tsconfig.module.json",
     "build": "npm run lint && npm run build:commonjs && npm run build:esmodule",
     "prepare": "npm run build",
-    "ngcc-compile": "ngcc --properties es2015 esm5 browser module main",
-    "postinstall": "npm run ngcc-compile"
+    "postinstall": "ngcc"
   },
   "peerDependencies": {
     "@angular/core": ">=9.0.0",
