@@ -1,6 +1,6 @@
 {
   "name": "@igorkmkd/ng-sidebar9plus",
-  "version": "9.0.1",
+  "version": "10.0.0",
   "description": "Angular sidebar component 9+. Forked from https://github.com/arkon/ng-sidebar.",
   "repository": {
     "type": "git",
@@ -41,15 +41,15 @@
   },
   "devDependencies": {
     "@angular-devkit/schematics": "^13.0.3",
-    "@angular/common": "^9.1.13",
-    "@angular/compiler": "^9.1.13",
-    "@angular/compiler-cli": "^9.1.13",
-    "@angular/core": "^9.1.13",
-    "@angular/platform-browser": "^9.1.13",
+    "@angular/common": "^10.2.5",
+    "@angular/compiler": "^10.2.5",
+    "@angular/compiler-cli": "^10.2.5",
+    "@angular/core": "^10.2.5",
+    "@angular/platform-browser": "^10.2.5",
     "rimraf": "^3.0.2",
     "rxjs": "^6.5.5",
     "tslint": "^5.20.1",
-    "typescript": "~3.8.3",
+    "typescript": "~4.0.8",
     "zone.js": "~0.10.3"
   }
 }
