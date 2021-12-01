@@ -1,14 +1,14 @@
 {
-  "name": "ng-sidebar",
-  "version": "9.4.3",
-  "description": "[DEPRECATED] Angular sidebar component.",
+  "name": "ng-sidebar9plus",
+  "version": "9.0.0",
+  "description": "Angular sidebar component 9+.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/arkon/ng-sidebar.git"
+    "url": "https://github.com/igorkgg/ng-sidebar"
   },
-  "homepage": "http://echeung.me/ng-sidebar/",
+  "homepage": "https://github.com/igorkgg/ng-sidebar/blob/master/README.md",
   "bugs": {
-    "url": "https://github.com/arkon/ng-sidebar/issues"
+    "url": "https://github.com/igorkgg/ng-sidebar/issues"
   },
   "files": [
     "lib_commonjs/*",
