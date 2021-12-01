@@ -1,10 +1,10 @@
 {
-  "name": "ng-sidebar9plus",
-  "version": "9.0.0",
+  "name": "@igorkmkd/ng-sidebar9plus",
+  "version": "9.0.1",
   "description": "Angular sidebar component 9+. Forked from https://github.com/arkon/ng-sidebar.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/igorkgg/ng-sidebar"
+    "url": "git+https://github.com/igorkgg/ng-sidebar.git"
   },
   "homepage": "https://github.com/igorkgg/ng-sidebar/blob/master/README.md",
   "bugs": {
@@ -33,8 +33,7 @@
     "build:commonjs": "rimraf lib_commonjs && ngc -p tsconfig.json",
     "build:esmodule": "rimraf lib_esmodule && ngc -p tsconfig.module.json",
     "build": "npm run lint && npm run build:commonjs && npm run build:esmodule",
-    "prepare": "npm run build",
-    "postinstall": "ngcc"
+    "prepare": "npm run build"
   },
   "peerDependencies": {
     "@angular/core": ">=9.0.0",
