@@ -1,4 +1,4 @@
-# ng-sidebar9plus
+# ng-sidebar
 
 ⚠️　**This package is forked form deprecated package **[ng-sidebar](https://www.npmjs.com/package/ng-sidebar)** .** ⚠️
 
@@ -16,7 +16,12 @@ An Angular sidebar component.
 ## Installation
 
 ```shell
-npm install --save ng-sidebar9plus
+npm install --save ng-sidebar
+```
+
+### Pack into tgz
+```shell
+npm pack
 ```
 
 ### SystemJS configuration
@@ -26,13 +31,13 @@ If you're using SystemJS, be sure to add the appropriate settings to your System
 ```js
 const map = {
   // ...
-  'ng-sidebar9plus': 'node_modules/ng-sidebar9plus',
+  'ng-sidebar': 'node_modules/ng-sidebar',
   // ...
 };
 
 const packages = {
   // ...
-  'ng-sidebar9plus': {
+  'ng-sidebar': {
     main: 'lib/index',
     defaultExtension: 'js'
   },
