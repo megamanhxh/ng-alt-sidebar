@@ -22,7 +22,24 @@ npm install --save ng-alt-sidebar
 
 ### SystemJS configuration
 
-If you were using SystemJS, huge chance it will not work anymore due to the change of module exporting.
+If you're using SystemJS, be sure to add the appropriate settings to your SystemJS config:
+
+```js
+const map = {
+  // ...
+  'ng-alt-sidebar': 'node_modules/ng-alt-sidebar',
+  // ...
+};
+
+const packages = {
+  // ...
+  'ng-alt-sidebar': {
+    main: 'lib/index',
+    defaultExtension: 'js'
+  },
+  // ...
+};
+```
 
 
 ## Changelog
