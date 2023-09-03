@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AltSidebarContainer } from './alt-sidebar-container.component';
+import { AltSidebarContainerComponent } from './alt-sidebar-container.component';
 
 describe('AltSidebarContainer', () => {
-  let component: AltSidebarContainer;
-  let fixture: ComponentFixture<AltSidebarContainer>;
+  let component: AltSidebarContainerComponent;
+  let fixture: ComponentFixture<AltSidebarContainerComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [AltSidebarContainer]
+      declarations: [AltSidebarContainerComponent]
     });
-    fixture = TestBed.createComponent(AltSidebarContainer);
+    fixture = TestBed.createComponent(AltSidebarContainerComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

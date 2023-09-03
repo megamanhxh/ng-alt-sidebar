@@ -18,7 +18,7 @@ import {
 } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 import { isIOS, isLTR } from './utils';
-import { AltSidebarContainer } from './alt-sidebar-container.component';
+import { AltSidebarContainerComponent } from './alt-sidebar-container.component';
 
 @Component({
   selector: 'ng-alt-sidebar',
@@ -90,7 +90,7 @@ import { AltSidebarContainer } from './alt-sidebar-container.component';
   ],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class AltSidebar implements AfterContentInit, OnInit, OnChanges, OnDestroy {
+export class AltSidebarComponent implements AfterContentInit, OnInit, OnChanges, OnDestroy {
   // `openedChange` allows for "2-way" data binding
   @Input() opened: boolean = false;
   @Output() openedChange: EventEmitter<boolean> = new EventEmitter<boolean>();
@@ -155,7 +155,7 @@ export class AltSidebar implements AfterContentInit, OnInit, OnChanges, OnDestro
   private _isBrowser: boolean;
 
   constructor(
-    @Optional() private _container: AltSidebarContainer,
+    @Optional() private _container: AltSidebarContainerComponent,
     private _ref: ChangeDetectorRef,
     @Inject(PLATFORM_ID) platformId: Object
   ) {

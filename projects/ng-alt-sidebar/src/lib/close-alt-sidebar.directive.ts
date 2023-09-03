@@ -1,16 +1,14 @@
-import { Directive } from '@angular/core';
-import { AltSidebar } from './alt-sidebar.component';
+import { Directive, HostBinding } from '@angular/core';
+import { AltSidebarComponent } from './alt-sidebar.component';
 
 @Directive({
-  selector: '[closeSidebar]',
-  host: {
-    '(click)': '_onClick()'
-  }
+  selector: '[closeSidebar]'
 })
-export class CloseAltSidebar {
-  constructor(private _sidebar?: AltSidebar) {}
+export class CloseAltSidebarDirective {
+  constructor(private _sidebar?: AltSidebarComponent) {}
 
   /** @internal */
+  @HostBinding('click')
   _onClick(): void {
     if (this._sidebar) {
       this._sidebar.close();

@@ -90,6 +90,12 @@
               "browsers": "ChromeHeadlessCI"
             }
           }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": ["src/**/*.ts", "src/**/*.html"]
+          }
         }
       }
     },
@@ -127,6 +133,12 @@
               "progress": false,
               "browsers": "ChromeHeadlessCI"
             }
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": ["projects/ng-alt-sidebar/**/*.ts", "projects/ng-alt-sidebar/**/*.html"]
           }
         }
       }

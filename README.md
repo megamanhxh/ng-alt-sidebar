@@ -1,17 +1,19 @@
 # ng-alt-sidebar
 
+An Angular sidebar component.
+
+*Formerly called [ng-sidebar](https://github.com/arkon/ng-sidebar)*
+
 ⚠️　**This package is forked form deprecated package **[ng-sidebar](https://www.npmjs.com/package/ng-sidebar)** .** ⚠️
 
 ---
 
-[![NPM](https://nodei.co/npm/ng-alt-sidebar?compact=true)](https://nodei.co/npm/ng-alt-sidebar)
+[![Build Status](https://dl.circleci.com/status-badge/img/gh/megamanhxh/ng-alt-sidebar/tree/master.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/megamanhxh/ng-alt-sidebar/tree/master)
+[![NPM Version](https://img.shields.io/npm/v/ng-alt-sidebar.svg)](https://www.npmjs.com/package/ng-alt-sidebar)
+[![NPM Downloads](https://img.shields.io/npm/dt/ng-alt-sidebar.svg)](https://www.npmjs.com/package/ng-alt-sidebar)
 
 ## Example
 https://megamanhxh.github.io/ng-alt-sidebar/
-
-*Formerly called [ng-sidebar](https://github.com/arkon/ng-sidebar)*
-
-An Angular sidebar component.
 
 
 ## Installation

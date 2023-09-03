@@ -13,7 +13,7 @@ import {
   SimpleChanges
 } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
-import { AltSidebar } from './alt-sidebar.component';
+import { AltSidebarComponent } from './alt-sidebar.component';
 
 @Component({
   selector: 'ng-alt-sidebar-container',
@@ -82,7 +82,7 @@ import { AltSidebar } from './alt-sidebar.component';
   ],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class AltSidebarContainer implements AfterContentInit, OnChanges, OnDestroy {
+export class AltSidebarContainerComponent implements AfterContentInit, OnChanges, OnDestroy {
   @Input() animate: boolean = true;
 
   @Input() allowSidebarBackdropControl: boolean = true;
@@ -93,7 +93,7 @@ export class AltSidebarContainer implements AfterContentInit, OnChanges, OnDestr
   @Input() contentClass?: string;
   @Input() backdropClass?: string;
 
-  private _sidebars: Array<AltSidebar> = [];
+  private _sidebars: Array<AltSidebarComponent> = [];
 
   private _isBrowser: boolean;
 
@@ -137,7 +137,7 @@ export class AltSidebarContainer implements AfterContentInit, OnChanges, OnDestr
    *
    * @param sidebar {Sidebar} A sidebar within the container to register.
    */
-  _addSidebar(sidebar: AltSidebar) {
+  _addSidebar(sidebar: AltSidebarComponent) {
     this._sidebars.push(sidebar);
     this._subscribe(sidebar);
   }
@@ -149,7 +149,7 @@ export class AltSidebarContainer implements AfterContentInit, OnChanges, OnDestr
    *
    * @param sidebar {Sidebar} The sidebar to remove.
    */
-  _removeSidebar(sidebar: AltSidebar) {
+  _removeSidebar(sidebar: AltSidebarComponent) {
     const index = this._sidebars.indexOf(sidebar);
     if (index !== -1) {
       this._sidebars.splice(index, 1);
@@ -256,7 +256,7 @@ export class AltSidebarContainer implements AfterContentInit, OnChanges, OnDestr
   /**
    * Subscribes from a sidebar events to react properly.
    */
-  private _subscribe(sidebar: AltSidebar): void {
+  private _subscribe(sidebar: AltSidebarComponent): void {
     sidebar.onOpenStart.subscribe(() => this._onToggle());
     sidebar.onOpened.subscribe(() => this._markForCheck());
 

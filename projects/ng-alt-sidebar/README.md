@@ -1,17 +1,19 @@
 # ng-alt-sidebar
 
+An Angular alternative sidebar component.
+
+*Formerly called [ng-sidebar](https://github.com/arkon/ng-sidebar)*
+
 ⚠️　**This package is forked form deprecated package **[ng-sidebar](https://www.npmjs.com/package/ng-sidebar)** .** ⚠️
 
 ---
 
-[![NPM](https://nodei.co/npm/ng-alt-sidebar?compact=true)](https://nodei.co/npm/ng-alt-sidebar)
+[![Build Status](https://dl.circleci.com/status-badge/img/gh/megamanhxh/ng-alt-sidebar/tree/master.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/megamanhxh/ng-alt-sidebar/tree/master)
+[![NPM Version](https://img.shields.io/npm/v/ng-alt-sidebar.svg)](https://www.npmjs.com/package/ng-alt-sidebar)
+[![NPM Downloads](https://img.shields.io/npm/dt/ng-alt-sidebar.svg)](https://www.npmjs.com/package/ng-alt-sidebar)
 
 ## Example
 https://megamanhxh.github.io/ng-alt-sidebar/
-
-*Formerly called [ng-sidebar](https://github.com/arkon/ng-sidebar)*
-
-An Angular sidebar component.
 
 
 ## Installation
@@ -22,7 +24,7 @@ npm install --save ng-alt-sidebar
 
 ### SystemJS configuration
 
-If you were using SystemJS, huge chance it will not work anymore due to the change of module exporting.
+> **Note:** If you were using SystemJS, huge chance it will not work anymore due to the change of module exporting.
 
 
 ## Changelog
@@ -35,12 +37,12 @@ See the [releases page](https://github.com/megamanhxh/ng-alt-sidebar/releases) o
 Add `AltSidebarModule` to your app module:
 
 ```typescript
-import { SidebarModule } from 'ng-alt-sidebar';
+import { AltSidebarModule } from 'ng-alt-sidebar';
 
 @NgModule({
-    declarations: [AppComponent],
-    imports: [BrowserModule, AltSidebarModule.forRoot()],
-    bootstrap: [AppComponent],
+  declarations: [AppComponent],
+  imports: [BrowserModule, AltSidebarModule.forRoot()],
+  bootstrap: [AppComponent],
 })
 class AppModule {}
 ```
@@ -50,8 +52,8 @@ Your page content should be in some container with a `ng-alt-sidebar-content` at
 
 ```typescript
 @Component({
-    selector: 'app',
-    template: `
+  selector: 'app',
+  template: `
     <!-- Container for sidebar(s) + page content -->
     <ng-alt-sidebar-container>
 
@@ -69,11 +71,11 @@ Your page content should be in some container with a `ng-alt-sidebar-content` at
   `
 })
 class AppComponent {
-    private _opened: boolean = false;
+  private _opened: boolean = false;
 
-    private _toggleSidebar() {
-        this._opened = !this._opened;
-    }
+  private _toggleSidebar() {
+    this._opened = !this._opened;
+  }
 }
 ```
 
@@ -83,7 +85,7 @@ A directive is also provided to easily close the sidebar by clicking something i
 
 ```html
 <ng-alt-sidebar>
-    <a closeSidebar>Closes the sidebar</a>
+  <a closeSidebar>Closes the sidebar</a>
 </ng-alt-sidebar>
 ```
 
