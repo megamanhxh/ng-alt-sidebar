@@ -162,7 +162,7 @@ export class AltSidebar implements AfterContentInit, OnInit, OnChanges, OnDestro
     if (!this._container) {
       throw new Error(
         '<ng-alt-sidebar> must be inside a <ng-alt-sidebar-container>. ' +
-          'See https://github.com/arkon/ng-alt-sidebar#usage for more info.'
+          'See https://github.com/megamanhxh/ng-alt-sidebar#usage for more info.'
       );
     }
 

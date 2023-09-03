@@ -35,7 +35,7 @@ See the [releases page](https://github.com/megamanhxh/ng-alt-sidebar/releases) o
 Add `AltSidebarModule` to your app module:
 
 ```typescript
-import { SidebarModule } from 'ng-alt-sidebar';
+import { AltSidebarModule } from 'ng-alt-sidebar';
 
 @NgModule({
   declarations: [AppComponent],

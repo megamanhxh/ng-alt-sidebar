@@ -22,24 +22,7 @@ npm install --save ng-alt-sidebar
 
 ### SystemJS configuration
 
-If you're using SystemJS, be sure to add the appropriate settings to your SystemJS config:
-
-```js
-const map = {
-  // ...
-  'ng-alt-sidebar': 'node_modules/ng-alt-sidebar',
-  // ...
-};
-
-const packages = {
-  // ...
-  'ng-alt-sidebar': {
-    main: 'lib/index',
-    defaultExtension: 'js'
-  },
-  // ...
-};
-```
+If you were using SystemJS, huge chance it will not work anymore due to the change of module exporting.
 
 
 ## Changelog
@@ -55,9 +38,9 @@ Add `AltSidebarModule` to your app module:
 import { SidebarModule } from 'ng-alt-sidebar';
 
 @NgModule({
-  declarations: [AppComponent],
-  imports: [BrowserModule, AltSidebarModule.forRoot()],
-  bootstrap: [AppComponent],
+    declarations: [AppComponent],
+    imports: [BrowserModule, AltSidebarModule.forRoot()],
+    bootstrap: [AppComponent],
 })
 class AppModule {}
 ```
@@ -67,8 +50,8 @@ Your page content should be in some container with a `ng-alt-sidebar-content` at
 
 ```typescript
 @Component({
-  selector: 'app',
-  template: `
+    selector: 'app',
+    template: `
     <!-- Container for sidebar(s) + page content -->
     <ng-alt-sidebar-container>
 
@@ -86,11 +69,11 @@ Your page content should be in some container with a `ng-alt-sidebar-content` at
   `
 })
 class AppComponent {
-  private _opened: boolean = false;
+    private _opened: boolean = false;
 
-  private _toggleSidebar() {
-    this._opened = !this._opened;
-  }
+    private _toggleSidebar() {
+        this._opened = !this._opened;
+    }
 }
 ```
 
@@ -100,7 +83,7 @@ A directive is also provided to easily close the sidebar by clicking something i
 
 ```html
 <ng-alt-sidebar>
-  <a closeSidebar>Closes the sidebar</a>
+    <a closeSidebar>Closes the sidebar</a>
 </ng-alt-sidebar>
 ```
 
@@ -108,7 +91,7 @@ You can also use the `open()` and `close()` functions:
 
 ```html
 <ng-alt-sidebar #sidebar>
-  <button (click)="sidebar.close()">Close sidebar</button>
+    <button (click)="sidebar.close()">Close sidebar</button>
 </ng-alt-sidebar>
 
 <button (click)="sidebar.open()">Open sidebar</button>
