@@ -1,6 +1,6 @@
 {
   "name": "ng-alt-sidebar",
-  "version": "16.2.0-alpha.2",
+  "version": "17.3.12",
   "homepage": "https://megamanhxh.github.io/ng-alt-sidebar",
   "repository": {
     "type": "git",
@@ -11,6 +11,11 @@
     "url": "https://github.com/arkon"
   },
   "contributors": [
+    {
+      "name": "Raul Luna",
+      "email": "superman_ha_muerto@yahoo.com",
+      "url": "https://github.com/rlunaro"
+    },
     {
       "name": "MegamanHxH",
       "email": "megamanhxh@gmail.com",
@@ -41,6 +46,7 @@
     "angular 14",
     "angular 15",
     "angular 16",
+    "angular 17",
     "ng",
     "ng2",
     "ng4",
@@ -56,6 +62,7 @@
     "ng14",
     "ng15",
     "ng16",
+    "ng17",
     "Angular2",
     "Angular4",
     "Angular5",
@@ -70,6 +77,7 @@
     "Angular14",
     "Angular15",
     "Angular16",
+    "Angular17",
     "2",
     "4",
     "5",
@@ -84,6 +92,7 @@
     "14",
     "15",
     "16",
+    "17",
     "Library",
     "side",
     "bar",
@@ -141,8 +150,8 @@
     "url": "https://megamanhxh.github.io/ng-alt-sidebar/issues"
   },
   "peerDependencies": {
-    "@angular/common": "^16.2.0",
-    "@angular/core": "^16.2.0"
+    "@angular/common": "^17.3.12",
+    "@angular/core": "^17.3.12"
   },
   "dependencies": {
     "tslib": "^2.3.0"
