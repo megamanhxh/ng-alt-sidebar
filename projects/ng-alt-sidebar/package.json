@@ -113,6 +113,7 @@
     "ng14-sidebar",
     "ng15-sidebar",
     "ng16-sidebar",
+    "ng17-sidebar",
     "ng-alt-sidebar",
     "ng2-alt-sidebar",
     "ng4-alt-sidebar",
@@ -128,6 +129,7 @@
     "ng14-alt-sidebar",
     "ng15-alt-sidebar",
     "ng16-alt-sidebar",
+    "ng17-alt-sidebar",
     "angular2 sidebar",
     "angular4 sidebar",
     "angular5 sidebar",
@@ -142,6 +144,7 @@
     "angular14 sidebar",
     "angular15 sidebar",
     "angular16 sidebar",
+    "angular17 sidebar",
     "alt-sidebar",
     "menu"
   ],
