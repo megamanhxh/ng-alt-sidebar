@@ -15,11 +15,11 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser",
+          "builder": "@angular-devkit/build-angular:application",
           "options": {
             "outputPath": "dist/ng-alt-sidebar-example",
             "index": "src/index.html",
-            "main": "src/main.ts",
+            "browser": "src/main.ts",
             "polyfills": ["zone.js"],
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
@@ -44,9 +44,7 @@
               "outputHashing": "all"
             },
             "development": {
-              "buildOptimizer": false,
               "optimization": false,
-              "vendorChunk": true,
               "extractLicenses": false,
               "sourceMap": true,
               "namedChunks": true
@@ -58,10 +56,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "ng-alt-sidebar-example:build:production"
+              "buildTarget": "ng-alt-sidebar-example:build:production"
             },
             "development": {
-              "browserTarget": "ng-alt-sidebar-example:build:development"
+              "buildTarget": "ng-alt-sidebar-example:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -69,7 +67,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ng-alt-sidebar-example:build"
+            "buildTarget": "ng-alt-sidebar-example:build"
           }
         },
         "test": {
